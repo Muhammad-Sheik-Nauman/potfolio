@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Muhammad Sheik Nauman</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="profile">
+            <img src="images/profile.jpg" alt="Muhammad Sheik Nauman">
+        </div>
+        <h1>Muhammad Sheik Nauman</h1>
+        <p>Engineering student | Web Developer | DevOps Enthusiast</p>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I'm an engineering student passionate about web development, always exploring new ways to build and enhance applications. I enjoy working with JavaScript and its frameworks, experimenting with different technologies to create faster, more efficient apps. Lately, I've been diving into DevOps to gain a deeper understanding of the entire development lifecycle—from coding to deployment.</p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+            <a href="https://github.com/Muhammad-Sheik-Nauman/weather_app" target="_blank" class="project">
+            <img src="images/weather.jpg" alt="Weather Forecast App">
+            <h3>Weather Forecast App</h3>
+            <p>A real-time weather app using OpenWeather API, built with HTML, CSS, and JavaScript.</p>
+        </a>
+    
+        <a href="https://github.com/Muhammad-Sheik-Nauman/palindrome-checker" target="_blank" class="project">
+            <img src="images/palindrome.jpg" alt="palindrome checker">
+            <h3>Palindrome Checker</h3>
+            <p>A palindrome checker is a function that determines whether a given string reads the same forward and backward, ignoring case, spaces, and special characters.</p>
+        </a>
+        <a href="https://github.com/Muhammad-Sheik-Nauman/analog-clock" target="_blank" class="project">
+            <img src="images/clock.jpg" alt="clock">
+            <h3>Analog Clock</h3>
+            <p>An analog clock displays time with rotating hands on a numbered dial, typically showing hours, minutes, and seconds.</p>
+        </a>
+    
+        <a href="https://github.com/Muhammad-Sheik-Nauman/color-flipper" target="_blank" class="project hidden">
+            <img src="images/color.jpg" alt="color flipper">
+            <h3>Color Flipper</h3>
+            <p>A color flipper is a simple application that changes the background or text color randomly or from a predefined set of colors when triggered, often by a button click.</p>
+        </a>
+    
+        <a href="https://github.com/Muhammad-Sheik-Nauman/stop-watch" target="_blank" class="project hidden">
+            <img src="images/stop.jpg" alt="stop watch">
+            <h3>Stopwatch</h3>
+            <p>A stopwatch is a timekeeping device used to measure elapsed time with precision. It typically features start, stop, and reset functions, allowing users to track time intervals accurately.</p>
+        </a>
+    
+        <a href="https://github.com/Muhammad-Sheik-Nauman/to-do-list" target="_blank" class="project hidden">
+            <img src="images/todo.jpg" alt="todo list">
+            <h3>To-Do List</h3>
+            <p>A to-do list is a task management tool that helps users organize and prioritize tasks. It typically includes a list of items to be completed, with options to add, edit, check off, or remove tasks.</p>
+        </a>
+    
+        <button id="show-more-btn">Show More</button>
+    </section>
+    
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skill-category">
+            <h3>Frontend</h3>
+            <i class="fa-brands fa-html5 fa-3x"></i>
+            <i class="fa-brands fa-css3-alt fa-3x"></i>
+            <i class="fa-brands fa-react fa-3x"></i>
+            <i class="fa-brands fa-js fa-3x"></i>
+        </div>
+        <div class="skill-category">
+            <h3>Backend</h3>
+            <i class="fa-brands fa-node-js fa-3x"></i>
+            <i class="fa-brands fa-python fa-3x"></i>
+            <i class="fa-brands fa-java fa-3x"></i>
+        </div>
+        <div class="skill-category">
+            <h3>Tools</h3>
+            <i class="fa-brands fa-git fa-3x"></i>
+            <i class="fa-brands fa-github fa-3x"></i>
+            <i class="fa-brands fa-docker fa-3x"></i>
+            <i class="fa-brands fa-npm fa-3x"></i>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Developer who will increase your project productivity in less time.</p>
+        <div class="social-links">
+            <a href="https://github.com/Muhammad-Sheik-Nauman" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/muhammad-sheik-nauman" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:noumansheik07@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Muhammad Sheik Nauman</p>
+    </footer>
+
+    <script>
+        document.getElementById('show-more-btn').addEventListener('click', function() {
+            const hiddenProjects = document.querySelectorAll('.project.hidden');
+            hiddenProjects.forEach(project => project.classList.toggle('visible'));
+            this.textContent = this.textContent === 'Show More' ? 'Show Less' : 'Show More';
+        });
+    </script>
+</body>
+</html>
